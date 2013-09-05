@@ -52,3 +52,5 @@ alias vl='vim -u /usr/share/vim/vim73/macros/less.vim'
 alias gsr='DISPLAY=:0 gnome-shell --replace &'
 alias rimg='rename "s/^(IMG_)|(MVI_)//"'
 alias lsimg="while IFS= read -r -d '' i; do echo; echo $i;  ls -1 $i | head -1; ls -1 $i | tail -1; done < <(find . -type d -print0 | sort -z)"
+
+eval $(dircolors ~/.dircolors)
