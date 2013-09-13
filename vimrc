@@ -2,6 +2,7 @@ execute pathogen#infect()
 
 
 noremap <F4> :set hlsearch! hlsearch?<CR>
+autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 
 if has("syntax") && (&t_Co > 2 || has("gui_running"))
