@@ -9,6 +9,9 @@
 [core]
 	excludesfile = ~/.gitignore
 
+[svn]
+	rmdir = true
+
 [alias]
 	br = branch
 	co = checkout
