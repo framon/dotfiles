@@ -7,8 +7,8 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 if has("syntax") && (&t_Co > 2 || has("gui_running"))
 	syntax enable
-	set background=dark
-	colorscheme solarized
+"	set background=dark
+"	colorscheme solarized
 	se t_Co=256
 
 	function! ActivateInvisibleCharIndicator()
@@ -24,5 +24,5 @@ set list listchars=tab:»·,trail:·,extends:…
 
 set tabstop=4
 set shiftwidth=4
-set textwidth=100
+set textwidth=110
 
