@@ -1,10 +1,11 @@
-#!/usr/bin/env zsh
-
+#!/usr/bin/env bash
 BASEDIR=$(cd $(dirname "$0"); pwd)
 
-read -k "?This may overwrite existing files. Are you sure? (y/n) ";
-echo;
-	if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+read -n1 -p "?This may overwrite existing files. Are you sure? (y/n) " REPLY;
+
+echo $REPLY;
+
+	if [ "$REPLY" != "y" ]; then
 		exit 1;
 	fi
 
