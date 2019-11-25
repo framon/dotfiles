@@ -1,0 +1,33 @@
+@import "/home/framon/.config/colors/colors.css";
+
+window {
+    border: 2px solid @color4;
+    background-color: @background;
+}
+
+#input {
+    border: 2px solid @cursor;
+    background-color: @background; 
+    font-size: 18px;
+}
+
+
+#outer-box {
+    margin: 10px;
+}
+
+#scroll {
+    margin: 5px 0px;
+    font-size: 16px;
+    color: @color7;
+}
+
+#scroll label {
+    margin: 2px 0px;
+}
+
+#selected {
+    background-color: @selection-background;
+    color: @selection-foreground;
+
+}

@@ -1,0 +1,57 @@
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+
+[color "status"]
+    branch = magenta
+    untracked = cyan
+    unmerged = yellow
+
+[push]
+    default = simple
+
+[core]
+    excludesfile = $XDG_CONFIG_HOME/git/ignore
+
+[svn]
+    rmdir = true
+
+[alias]
+    br = branch
+    co = checkout
+    ci = commit
+    di = diff
+    ds = diff --staged
+    st = status -sb
+
+    sl = stash list
+    sa = stash apply
+    ss = stash push
+    sp = stash pop
+
+    ls = log --pretty=format:"%C(yellow)%h\\ %Cblue[%an]%Cred%d\\ %Creset%s" --decorate
+    ll = log --pretty=format:"%C(yellow)%h\\ %ar\\ %Cblue[%an]%Cred%d\\ %Creset%s" --decorate --stat
+    lc = log --pretty=format:"%C(yellow)%h\\ %ar\\ %Cblue[%an]%Cred%d\\ %Creset%s" --decorate --stat ORIG_HEAD..
+    last = log --pretty=format:"%C(yellow)%h\\ %ar\\ %Cblue[%an]%Cred%d\\ %Creset%n%s%n%n%b" --decorate --stat -1
+
+    unstage = reset HEAD --
+    undo = reset --hard
+
+    sco = svn clone -s
+
+    accept-ours = "!f() { [ -z \"$@\" ] && set - '.'; git checkout --ours -- \"$@\"; git add -vu -- \"$@\"; }; f"
+    accept-theirs = "!f() { [ -z \"$@\" ] && set - '.'; git checkout --theirs -- \"$@\"; git add -vu -- \"$@\"; }; f"
+
+
+#    fetchall = fetch -v --all
+#    log-fancy = log --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+#    log-me    = !UN=$(git config user.name)&& git log --author="\"$UN\"" --pretty=format:'%h %cd %s' --date=short
+#    log-nice  = log --graph --decorate --pretty=oneline --abbrev-commit
+
+[commit]
+    gpgsign = true
+
+[rebase]
+    instructionFormat = "[%an] %s"
+

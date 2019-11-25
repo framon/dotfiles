@@ -1,0 +1,2 @@
+for_window [class="java-lang-Thread" title="win0"] floating enable
+for_window [class="jetbrains-idea" title="Tip of the Day"] floating enable

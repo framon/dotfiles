@@ -1,0 +1,136 @@
+@import "../colors/colors.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Fira Code, "Font Awesome", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @background;
+    border-bottom: 3px solid transparent;
+    color: @foreground;
+}
+
+#window {
+    margin-left: 20px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    margin: 0 3px;
+    color: @foreground;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+    background: @cursor;
+    border-bottom: 3px solid @cursor;
+}
+
+#workspaces button.urgent {
+    background: @color1;
+    color: white;
+}
+
+#mode {
+    background: transparent;
+    border-bottom: 3px solid @color15;
+}
+
+#clock, #battery, #cpu, #memory, #network, #pulseaudio, #temperature, #backlight, #idle_inhibitor, #custom-sl, #custom-spotify {
+    padding: 0 6px;
+    margin: 0 5px;
+}
+
+#idle_inhibitor.activated {
+    background: @color11;
+    color: white;
+}
+
+#clock {
+    color: @foreground;
+    border-bottom: 3px solid @color4;
+}
+
+#battery {
+    color: @foreground;
+    border-bottom: 3px solid @color1;
+}
+
+#battery.full {
+    border-bottom: 3px solid @color2;
+}
+
+#battery.charging {
+    border-bottom: 3px solid @color2;
+}
+
+#battery.charging.good {
+    background: @color2;
+    color: white;
+    border-bottom: 3px solid @color2;
+}
+
+#battery.charging.warning, #battery.charging.critical {
+    background: @color3;
+    color: white;
+    border-bottom: 3px solid @color3;
+}
+
+#battery.warning:not(.charging) {
+    color: @color1;
+}
+
+#battery.critical:not(.charging) {
+    background: @color1;
+    color: white;
+}
+
+#cpu {
+    color: @foreground;
+    border-bottom: 3px solid @color5;
+}
+
+#memory {
+    color: @foreground;
+    border-bottom: 3px solid @color5;
+}
+
+#network {
+    color: @foreground;
+    border-bottom: 3px solid @color2;
+}
+
+#network.disconnected {
+    background: @color1;
+    color: white;
+    border-bottom: 3px solid @color1;
+}
+
+#backlight {
+    color: @foreground;
+    border-bottom: 3px solid @color4;
+}
+
+#temperature {
+    color: @foreground;
+    border-bottom: 3px solid @color5;
+}
+
+#pulseaudio {
+    color: @foreground;
+    border-bottom: 3px solid @color4;
+}
+
+#pulseaudio.muted {
+    border-bottom: 3px solid @color1
+}
+
+#tray {
+    background-color: transparent;
+}
+
+
