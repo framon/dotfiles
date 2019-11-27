@@ -37,6 +37,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias vi='vim'
+alias cdw='cd ~/workspace'
 
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
@@ -48,5 +49,8 @@ export GPG_TTY=$(tty)
 
 # Fix java problem on sway
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+# Fix maven-git-versioning-extension problem on Intellij
+export VERSIONING_DISABLE=true
 
 source /usr/share/bash-completion/bash_completion
