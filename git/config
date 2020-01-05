@@ -11,8 +11,12 @@
 [push]
     default = simple
 
+[include]
+#    path = $XDG_CONFIG_HOME/gituser
+    path = ./user
+
 [core]
-    excludesfile = $XDG_CONFIG_HOME/git/ignore
+    excludesfile = ./ignore
 
 [svn]
     rmdir = true
