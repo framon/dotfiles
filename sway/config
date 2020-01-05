@@ -9,7 +9,8 @@ set $menu wofi --show drun -f
 set $lock $XDG_CONFIG_HOME/scripts/lock.bash
 
 ### Output configuration
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg $XDG_CONFIG_HOME/sway/background.png fill
 #
 # Example configuration:
 #
