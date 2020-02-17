@@ -1,0 +1,1 @@
+bindsym print exec --no-startup-id slurp | grim -g - $XDG_PICTURES_DIR/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
