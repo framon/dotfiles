@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 PS1='[\u@\h \W]\$ '
+[[ ${TERM} == xterm* ]] && PROMPT_COMMAND='printf "\033]0;%s\007" "${PWD/#$HOME/\~}"'
 
 if [ -f /usr/lib/bash-git-prompt/gitprompt.sh ]; then
    GIT_PROMPT_THEME=Custom
