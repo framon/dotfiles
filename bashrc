@@ -7,6 +7,7 @@
 
 PS1='[\u@\h \W]\$ '
 [[ ${TERM} == xterm* ]] && PROMPT_COMMAND='printf "\033]0;%s\007" "${PWD/#$HOME/\~}"'
+[[ ${TERM} == xterm* ]] && trap 'TXT="${BASH_COMMAND//[^[:print:]]/}"; [[ "$TXT" == "setGitPrompt" ]] && TXT="${PWD/#$HOME/\~}"; printf "\033]0;%s\007" "$TXT"' DEBUG
 
 if [ -f /usr/lib/bash-git-prompt/gitprompt.sh ]; then
    GIT_PROMPT_THEME=Custom
