@@ -189,22 +189,4 @@ bar {
     swaybar_command waybar
 }
 
-set $focused-bg-color    #6fd2fc
-set $inactive-bg-color   #ffffff
-set $text-color          #ffffff
-set $inactive-text-color #262626
-set $urgent-bg-color     #f72729
-set $child-color         #ffffff
-set $indicator           #ffffff
-
-
-# class                 border              background         text                 indicator
-client.focused          $focused-bg-color   $focused-bg-color  $text-color          $indicator $child-color
-client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator $child-color
-client.focused_inactive $inactive-bg-color  $focused-bg-color  $inactive-text-color $indicator $child-color
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator $child-color
-
-hide_edge_borders both
-default_border pixel 1
-
 include ./config.d/*
