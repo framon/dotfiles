@@ -1,1 +1,5 @@
-bindsym print exec --no-startup-id slurp | grim -g - $XDG_PICTURES_DIR/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')
+bindsym print exec --no-startup-id slurp | grim -g - | wl-copy \
+        && notify-send "Copied to clipboard"
+bindsym Alt+print exec --no-startup-id slurp | grim -g - \
+        $XDG_PICTURES_DIR/$(date +'screenshot_%Y-%m-%d-%H%M%S.png') \
+        && notify-send "Saved to file"
