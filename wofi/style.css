@@ -8,7 +8,8 @@ window {
 #input {
     border: 2px solid @cursor;
     background-color: @background; 
-    font-size: 18px;
+    font-size: 16px;
+    font-color: @foreground;
 }
 
 
@@ -19,7 +20,7 @@ window {
 #scroll {
     margin: 5px 0px;
     font-size: 16px;
-    color: @color7;
+    color: @color4;
 }
 
 #scroll label {
