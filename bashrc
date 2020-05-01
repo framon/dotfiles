@@ -51,6 +51,7 @@ export LESSOPEN='| file=%s; /usr/bin/lesspipe.sh "$file" | /usr/bin/pygmentize'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias rm='rm -I'
 alias vi='vim'
 alias cdw='cd ~/workspace'
 
