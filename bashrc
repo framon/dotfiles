@@ -26,7 +26,7 @@ export INPUTRC=$XDG_CONFIG_HOME/inputrc
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/config
 
 export EDITOR=vim
-export VIMINIT='let $VIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $VIMRC'
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 
 HISTCONTROL=ignoreboth
 HISTSIZE=-1
