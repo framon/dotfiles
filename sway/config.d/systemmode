@@ -1,0 +1,16 @@
+set $mode_system Lock (l), Logout (e), Suspend (s), Hibernate (h), Reboot (r), Poweroff (p)
+mode "$mode_system" {
+    bindsym l exec $lock, mode "default"
+    bindsym e exec swaymsg exit, mode "default"
+    bindsym s exec systemctl suspend, mode "default"
+    bindsym h exec systemctl hibernate, mode "default"
+    bindsym r exec systemctl reboot, mode "default"
+    bindsym p exec systemctl poweroff, mode "default"
+    #bindsym w exec grub-reboot 2 && systemctl reboot, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+p mode "$mode_system"
