@@ -35,6 +35,8 @@ if has("syntax") && (&t_Co > 2 || has("gui_running"))
 endif
 
 
+" Map Y like C or D: until the end
+map Y y$
 
 set tabstop=2
 set shiftwidth=2
