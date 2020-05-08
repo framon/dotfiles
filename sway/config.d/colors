@@ -1,17 +1,8 @@
-set $focused-bg-color    #6fd2fc
-set $inactive-bg-color   #ffffff
-set $text-color          #ffffff
-set $inactive-text-color #262626
-set $urgent-bg-color     #f72729
-set $child-color         #ffffff
-set $indicator           #ffffff
-
-
-# class                 border              background         text                 indicator
-client.focused          $focused-bg-color   $focused-bg-color  $text-color          $indicator $child-color
-client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color $indicator $child-color
-client.focused_inactive $inactive-bg-color  $focused-bg-color  $inactive-text-color $indicator $child-color
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator $child-color
+# class                 border       background   text         indicator
+client.focused          $background  $background  $color4      $background   $color8
+client.unfocused        $background  $background  $color7      $background   $color8
+client.focused_inactive $background  $background  $color4      $background   $color8
+client.urgent           $color1      $color1      $color15     $background   $color8
 
 hide_edge_borders both
 default_border pixel 1

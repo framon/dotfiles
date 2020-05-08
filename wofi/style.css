@@ -1,4 +1,4 @@
-@import "/home/framon/.config/colors/colors.css";
+@import "/home/framon/.cache/wal/colors-waybar.css";
 
 window {
     border: 2px solid @color4;
