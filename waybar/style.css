@@ -14,25 +14,20 @@ window#waybar {
     color: @foreground;
 }
 
-#mode {
-    color: @color1;
-    margin-left: 20px;
-}
-
 #window {
     margin-left: 20px;
 }
 
 #workspaces button {
-    padding: 0 5px;
-    margin: 0 3px;
+    padding: 0 7px;
+    margin: 0 0px;
     color: @foreground;
     border-bottom: 3px solid transparent;
 }
 
 #workspaces button.focused {
     background: @cursor;
-    border-bottom: 3px solid @cursor;
+    /*border-bottom: 3px solid @cursor;*/
 }
 
 #workspaces button.urgent {
@@ -41,6 +36,7 @@ window#waybar {
 }
 
 #mode {
+    color: @color1;
     background: transparent;
     border-bottom: 3px solid @color15;
 }
@@ -135,6 +131,7 @@ window#waybar {
 }
 
 #tray {
+    padding: 0px 5px;
     background-color: transparent;
 }
 
