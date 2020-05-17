@@ -55,6 +55,8 @@ alias rm='rm -I'
 alias vi='vim'
 alias cdw='cd ~/workspace'
 
+alias icat="kitty +kitten icat"
+
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Ask for gpg password on console
