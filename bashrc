@@ -34,7 +34,7 @@ HISTFILESIZE=-1
 shopt -s histappend
 shopt -s checkwinsize
 
-eval "$(dircolors -b ~/.config/colors/dircolors)"
+eval "$(dircolors)"
 alias ls='ls --color=auto'
 alias ip='ip --color=auto'
 alias grep='grep --color=auto'
