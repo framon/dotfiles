@@ -5,7 +5,8 @@
     // "width": 1280, // Waybar width
     "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": [],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "backlight", "clock", "tray"],
+    //"modules-right": ["idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "backlight", "clock", "tray"],
+    "modules-right": ["idle_inhibitor", "pulseaudio", "custom/gpmdp", "network", "cpu", "battery", "clock", "tray"],
 
     "sway/workspaces": {
         "disable-scroll": true,
@@ -18,6 +19,9 @@
             "4": "",
             "5": "",
             "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
             //"urgent": "",
             //"focused": "",
             "default": ""
@@ -146,5 +150,14 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/gpmdp": {
+        "format": "{}",
+        "return-type": "json",
+        "max-length": 50,
+//        "rotate": 10,
+        "escape": true,
+//        "restart-interval": 20,
+        "exec": "$HOME/.config/waybar/gpmdp-ws.py 2> /dev/null" // Script in resources folder
     }
 }

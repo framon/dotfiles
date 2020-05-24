@@ -135,4 +135,10 @@ window#waybar {
     background-color: transparent;
 }
 
+#custom-gpmdp {
+    padding: 0px 10px;
+    /*color: white;*/
+    /*background-color: @color12;*/
+    border-bottom: 3px solid @color4;
 
+}
