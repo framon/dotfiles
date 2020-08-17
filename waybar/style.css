@@ -36,9 +36,10 @@ window#waybar {
 }
 
 #mode {
-    color: @color1;
-    background: transparent;
-    border-bottom: 3px solid @color15;
+    padding: 0px 10px;
+    color: white;
+    background: @color1;
+    border-bottom: 3px solid @color1;
 }
 
 #clock, #battery, #cpu, #memory, #network, #pulseaudio, #temperature, #backlight, #idle_inhibitor, #custom-sl, #custom-spotify {
