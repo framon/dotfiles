@@ -1,5 +1,7 @@
-set $mode_system Lock (l), Logout (e), Suspend (s), Hibernate (h), Reboot (r), Poweroff (p)
-mode "$mode_system" {
+### Computer state keybindings
+
+set $mode_system <b>L</b><small>ock</small>, <b>E</b><small>xit</small>, <b>S</b><small>uspend</small>, <b>H</b><small>ibernate</small>, <b>R</b><small>eboot</small>, <b>P</b><small>oweroff</small>
+mode --pango_markup "$mode_system" {
     bindsym l exec $lock, mode "default"
     bindsym e exec swaymsg exit, mode "default"
     bindsym s exec systemctl suspend, mode "default"

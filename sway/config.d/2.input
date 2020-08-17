@@ -1,4 +1,5 @@
 ### Input configuration
+
 input "1267:32:Elan_Touchpad" {
     dwt enabled
     tap enabled

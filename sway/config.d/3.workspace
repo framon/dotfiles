@@ -3,7 +3,7 @@
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    # bindsym $mod+Return exec $term
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -20,6 +20,8 @@
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
+
+    bindsym $mod+y sticky toggle
 
     # Exit sway (logs you out of your Wayland session)
 #    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
@@ -112,11 +114,12 @@
 
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
+    bindsym $mod+Return scratchpad show
 #
 # Resizing containers:
 #
-mode "resize" {
+set $mode_resize <b>Resize</b>
+mode --pango_markup "$mode_resize" {
     # left will shrink the containers width
     # right will grow the containers width
     # up will shrink the containers height
@@ -135,6 +138,21 @@ mode "resize" {
     # Return to default mode
     bindsym Return mode "default"
     bindsym Escape mode "default"
-}
-bindsym $mod+r mode "resize"
 
+    bindsym u border none
+    bindsym p border pixel 2
+    bindsym n border normal
+}
+
+bindsym $mod+r mode "$mode_resize"
+
+#
+# Stop keybindings
+#
+set $mode_freeze <b>Freeze</b> <small>(Leave $mod+Escape)</small>
+mode --pango_markup "$mode_freeze" {
+    # back to normal
+    bindsym $mod+Escape mode "default"
+}
+
+bindsym $mod+Escape mode "$mode_freeze"

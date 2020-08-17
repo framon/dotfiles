@@ -1,9 +1,0 @@
-# class                 border       background   text         indicator
-client.focused          $background  $background  $color4      $background   $color8
-client.unfocused        $background  $background  $color7      $background   $color8
-client.focused_inactive $background  $background  $color4      $background   $color8
-client.urgent           $color1      $color1      $color15     $background   $color8
-
-hide_edge_borders both
-default_border pixel 1
-
