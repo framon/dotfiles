@@ -58,6 +58,8 @@
 
 [rebase]
     instructionFormat = "[%an] %s"
+    missingCommitsCheck = error
+    autoSquash = true
 
 [pull]
-	rebase = true
+    rebase = true
