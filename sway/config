@@ -5,7 +5,7 @@ set $down j
 set $up k
 set $right l
 set $term kitty
-set $menu wofi --show drun -f
+set $menu wofi --show drun -a
 set $lock $XDG_CONFIG_HOME/scripts/lock.bash
 set $cursor #000000
 
