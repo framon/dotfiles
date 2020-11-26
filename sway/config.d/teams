@@ -1,0 +1,2 @@
+no_focus [title="Notificação do Microsoft Teams"]
+for_window [title="Notificação do Microsoft Teams"] move absolute position 3400 px 50 px
