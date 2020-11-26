@@ -3,10 +3,10 @@
     "position": "top",
     "height": 30,
     // "width": 1280, // Waybar width
-    "modules-left": ["sway/workspaces", "sway/window"],
-    "modules-center": ["sway/mode"],
-    //"modules-right": ["idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "backlight", "clock", "tray"],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "custom/gpmdp", "network", "cpu", "battery", "clock", "tray"],
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["sway/window", "sway/mode"],
+    "modules-right": ["idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "battery", "backlight", "clock", "tray"],
+    //"modules-right": ["idle_inhibitor", "pulseaudio", "custom/gpmdp", "network", "cpu", "battery", "clock", "tray"],
 
     "sway/workspaces": {
         "disable-scroll": true,
