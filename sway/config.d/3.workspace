@@ -140,7 +140,7 @@ mode --pango_markup "$mode_resize" {
     bindsym Escape mode "default"
 
     bindsym u border none
-    bindsym p border pixel 2
+    bindsym p border pixel 3
     bindsym n border normal
 }
 
@@ -156,3 +156,5 @@ mode --pango_markup "$mode_freeze" {
 }
 
 bindsym $mod+Escape mode "$mode_freeze"
+
+focus_follows_mouse always
