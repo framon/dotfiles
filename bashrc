@@ -66,6 +66,9 @@ export GPG_TTY=$(tty)
 # Fix java problem on sway
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+# Force Firefox run over wayland
+export MOZ_ENABLE_WAYLAND=1
+
 # Fix maven-git-versioning-extension problem on Intellij
 export VERSIONING_DISABLE=true
 
