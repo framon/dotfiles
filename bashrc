@@ -54,6 +54,7 @@ alias l='ls -CF'
 alias rm='rm -I'
 alias vi='vim'
 alias cdw='cd ~/workspace'
+alias dps='docker ps -q |xargs docker inspect --format "{{printf \"%.12s\" .Id}}|{{index .Config.Labels \"com.docker.compose.project\"}}{{.Name}}|{{range .NetworkSettings.Networks}}{{.IPAddress}} {{end}}|{{range \$pk, \$pv := .NetworkSettings.Ports}}{{\$pk}},{{end}}|{{.State.Status}}|{{.State.Pid}}|{{.Config.Image    }}" | column -N "Id,Name,IP Addr,Ports,Status,PID,Image" -t -s \|'
 
 alias icat="kitty +kitten icat"
 
