@@ -35,7 +35,7 @@
     ss = stash push
     sp = stash pop
 
-    ls = log --pretty=format:"%C(yellow)%h\\ %Cblue[%an]%Cred%d\\ %Creset%s" --decorate
+    ls = log --pretty=format:"%C(yellow)%h\\ %Cblue[%<(12,trunc)%an]%Cred%d\\ %Creset%s" --decorate
     ll = log --pretty=format:"%C(yellow)%h\\ %ar\\ %Cblue[%an]%Cred%d\\ %Creset%s" --decorate --stat
     lc = log --pretty=format:"%C(yellow)%h\\ %ar\\ %Cblue[%an]%Cred%d\\ %Creset%s" --decorate --stat ORIG_HEAD..
     last = log --pretty=format:"%C(yellow)%h\\ %ar\\ %Cblue[%an]%Cred%d\\ %Creset%n%s%n%n%b" --decorate --stat -1
