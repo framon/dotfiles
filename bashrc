@@ -70,3 +70,6 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export VERSIONING_DISABLE=true
 
 source /usr/share/bash-completion/bash_completion
+command -v k3d &>/dev/null && source <(k3d completion bash)
+command -v kafkactl &>/dev/null && source <(kafkactl completion bash)
+command -v fluxctl &>/dev/null && source <(fluxctl completion bash)
