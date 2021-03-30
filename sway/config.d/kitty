@@ -1,3 +1,4 @@
 #
 for_window [app_id="kitty_sp"] floating enable, resize set 1600 1000, border 5, move scratchpad
+bindsym $mod+Return [app_id="kitty_sp"] scratchpad show
 exec kitty --class kitty_sp
