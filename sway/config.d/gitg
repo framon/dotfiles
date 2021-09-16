@@ -1,0 +1,1 @@
+for_window [app_id="gitg"] floating enable, resize set 1600 1500, border pixel 5
