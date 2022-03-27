@@ -63,6 +63,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Ask for gpg password on console
 export GPG_TTY=$(tty)
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
 # Fix java problem on sway
 export _JAVA_AWT_WM_NONREPARENTING=1
