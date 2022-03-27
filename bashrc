@@ -46,7 +46,8 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 ## What about using vim as pager and maintain less config simple for large files?
 view () { /usr/share/vim/vim82/macros/less.sh "$@";}
 export LESS='-RFx2'
-export LESSOPEN='| file=%s; /usr/bin/lesspipe.sh "$file" | /usr/bin/pygmentize'
+#export LESSOPEN='| file=%s; /usr/bin/lesspipe.sh "$file" | /usr/bin/pygmentize'
+export LESSOPEN="|/usr/bin/lesspipe.sh %s"
 
 alias ll='ls -alF'
 alias la='ls -A'
