@@ -61,6 +61,7 @@
     instructionFormat = "[%an] %s"
     missingCommitsCheck = error
     autoSquash = true
+    autostash = true
 
 [pull]
     rebase = true
