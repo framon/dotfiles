@@ -12,6 +12,7 @@ PS1='[\u@\h \W]\$ '
 if [ -f /usr/lib/bash-git-prompt/gitprompt.sh ]; then
    GIT_PROMPT_THEME=Custom
    GIT_PROMPT_THEME_FILE=~/.config/git-prompt-colors.sh
+   GIT_PROMPT_FETCH_REMOTE_STATUS=0 #Disable auto fetch due key passphrase
    source /usr/lib/bash-git-prompt/gitprompt.sh
 fi
 
