@@ -1,2 +1,3 @@
 for_window [class="Slack"] floating enable, resize set 1600 1500, border pixel 5, move scratchpad
 bindsym $mod+u [class="Slack"] scratchpad show
+exec slack
