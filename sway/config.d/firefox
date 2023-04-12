@@ -1,1 +1,1 @@
-for_window [app_id="Firefox" title="Firefox — Sharing Indicator"] floating enable
+for_window [title="Firefox — Sharing Indicator"] floating enable
